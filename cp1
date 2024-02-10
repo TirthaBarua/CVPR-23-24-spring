@@ -1,0 +1,120 @@
+•	Create a list of integers containing numbers from 1 to 10
+numbers = list(range(1, 11))
+​
+# Print the list
+print(numbers)
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+•	Append the square of each number to the list.
+numbers = [1, 2, 3, 4, 5]
+
+
+for number in numbers:
+    # Append the square of the number to the list
+    numbers.append(number**2)
+
+print(numbers)
+
+[1, 2, 3, 4, 5, 1, 4, 9, 16, 25]
+
+•	Find and print the sum of all elements in the list.
+numbers = [6,6,8,12,45]
+# Find and print the sum of all elements in the list
+total = sum(numbers)
+print(total)
+​
+77
+
+2.Tuple Operations:
+•	Create a tuple containing the first five even numbers.
+even_tuple = (2, 4, 6, 8, 10)
+​
+# Print the tuple
+print(even_tuple)
+​
+(2, 4, 6, 8, 10)
+
+•	Find and print the product of all elements in the tuple.
+my_tuple = ('A' , 'B' , 'C' , 'D'  )
+​
+print(my_tuple)
+
+('A', 'B', 'C', 'D')
+
+3.Set Operations:
+•	Create two sets of odd numbers between 1 to 10.
+
+odd_set = {num for num in range(1, 11) if num % 2 != 0}
+print(f"Odd Set: {odd_set}")
+
+Odd Set: {1, 3, 5, 7, 9}
+
+•	Find and print the union of the two sets.
+set1 = {'Tirtha', 'Barua'}
+set2 = {'adolf', 'Hitler'}
+​
+# Union using the | operator
+result = set1 | set2
+print(f"Union of set1 and set2: {result}")
+
+Union of set1 and set2: {'Tirtha', 'adolf', 'Hitler', 'Barua'}
+
+•	Find and print the intersection of the two sets.
+set1 = {5, 7, 9, 10}
+set2 = {2, 4, 8, 10}
+​
+# Intersection using the & operator
+result = set1 & set2
+print(f"Intersection of set1 and set2: {result}")
+​
+Intersection of set1 and set2: {10}
+
+4.Dictionary Operations:
+•	Create a dictionary where keys are the first five lowercase alphabets and values are their respective ASCII values.
+dict = {letter: ord(letter) for letter in 'abcde'}
+​
+print("Alphabet Dictionary:")
+print(dict)
+​
+Alphabet Dictionary:
+{'a': 97, 'b': 98, 'c': 99, 'd': 100, 'e': 101}
+
+•	Print the dictionary.
+alphabet_dict = {'a': 97, 'b': 98, 'c': 99, 'd': 100, 'e': 101}
+​
+# Printing the entire dictionary
+print("Alphabet Dictionary:")
+print(alphabet_dict)
+​
+Alphabet Dictionary:
+{'a': 97, 'b': 98, 'c': 99, 'd': 100, 'e': 101}
+
+5.Functional Programming:
+•	Define a function square(x) that returns the square of x in python
+def square(x):
+    return x ** 2
+​
+# Example usage
+result = square(5)
+print(f"The square of 5 is: {result}")  
+​
+The square of 5 is: 25
+
+•	Use the map function to apply the square function to each element in a list of integers from 1 to 10 and print the result.
+# Define the square function
+def square(x):
+    return x * x
+​
+# Create a list of integers from 1 to 10
+numbers = list(range(1, 11))
+​
+# Calculate the squares using a loop
+squares = [square(num) for num in numbers]
+​
+# Print the squares
+print("Squares of the numbers from 1 to 10:")
+print(squares)
+​
+Squares of the numbers from 1 to 10:
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
